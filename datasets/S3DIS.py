@@ -44,6 +44,9 @@ from utils.mayavi_visu import *
 from datasets.common import grid_subsampling
 from utils.config import bcolors
 
+# imc 
+from pathlib import Path 
+
 
 # ----------------------------------------------------------------------------------------------------------------------
 #
@@ -86,7 +89,9 @@ class S3DISDataset(PointCloudDataset):
         self.ignored_labels = np.array([])
 
         # Dataset folder
-        self.path = '../../Data/S3DIS'
+        ### self.path = '../../Data/S3DIS'
+        self.path = "E:\Stanford3dDataset_v1.2\Stanford3dDataset_v1.2"
+
 
         # Type of task conducted on this dataset
         self.dataset_task = 'cloud_segmentation'
