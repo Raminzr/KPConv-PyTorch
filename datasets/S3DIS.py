@@ -89,8 +89,9 @@ class S3DISDataset(PointCloudDataset):
         self.ignored_labels = np.array([])
 
         # Dataset folder
-        ### self.path = '../../Data/S3DIS'
-        self.path = "E:\Stanford3dDataset_v1.2\Stanford3dDataset_v1.2"
+        ### self.path = '../../Data/S3DIS'      # original
+        ### self.path = "E:\Stanford3dDataset_v1.2\Stanford3dDataset_v1.2 - Copy"       # imc
+        self.path = "E:\Stanford3dDataset_v1.2\Stanford3dDataset_v1.2"       # imc
 
 
         # Type of task conducted on this dataset
@@ -117,8 +118,12 @@ class S3DISDataset(PointCloudDataset):
 
         # Proportion of validation scenes
         self.cloud_names = ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_5', 'Area_6']
+        ### self.cloud_names = ['Area_3']   # imc
+
         self.all_splits = [0, 1, 2, 3, 4, 5]
         self.validation_split = 4
+        ### self.all_splits = [0]   # imc
+        ### self.validation_split = 0   # imc
 
         # Number of models used per epoch
         if self.set == 'training':
