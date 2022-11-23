@@ -7,14 +7,15 @@ import open3d as o3d
 # # Visualize point cloud
 # # The first part of the tutorial reads a point cloud and visualizes it.
 
-# print("Load a ply point cloud, print it, and render it")
-# ply_point_cloud = o3d.data.PLYPointCloud()
-# pcd = o3d.io.read_point_cloud(ply_point_cloud.path)
-# print(pcd)
-# print(np.asarray(pcd.points))
+print("Load a ply point cloud, print it, and render it")
+ply_point_cloud = o3d.data.PLYPointCloud()
+pcd = o3d.io.read_point_cloud(ply_point_cloud.path)
+print(pcd, '\n')
+print(np.asarray(pcd.points), '\n')
 
 
-# o3d.visualization.draw_geometries([pcd])
+
+o3d.visualization.draw_geometries([pcd])
 # """ additional arguments
 # zoom=0.3412,
 # front=[0.4257, -0.2125, -0.8795],
@@ -26,6 +27,6 @@ import open3d as o3d
 
 
 # Python API
-mesh = o3d.geometry.TriangleMesh.create_sphere()
-mesh.compute_vertex_normals()
-o3d.visualization.draw(mesh, raw_mode=True)
+# mesh = o3d.geometry.TriangleMesh.create_sphere()
+# mesh.compute_vertex_normals()
+# o3d.visualization.draw(mesh, raw_mode=True)

@@ -91,7 +91,7 @@ class S3DISDataset(PointCloudDataset):
         # Dataset folder
         ### self.path = '../../Data/S3DIS'      # original
         ### self.path = "E:\Stanford3dDataset_v1.2\Stanford3dDataset_v1.2 - Copy"       # imc
-        self.path = "E:\Stanford3dDataset_v1.2\Stanford3dDataset_v1.2"       # imc
+        self.path = "E:\Stanford3dDataset_v1.2.1\Stanford3dDataset_v1.2"       # imc
 
 
         # Type of task conducted on this dataset
